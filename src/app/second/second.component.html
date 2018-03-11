@@ -1,0 +1,65 @@
+<div class="main">
+
+  <div class="first-block">
+<p>Name: {{valueName}}</p>
+<p>Last Name: {{valueLastN}}</p>
+<p>Age: {{valueAge}}</p>
+<p>Job: {{valueJob}}</p>
+<p>Company: {{valueCompany}}</p>
+
+<button (click) = "showDiv()">Edit</button>
+</div>
+
+<div class="second-block">
+
+<div *ngIf = "isShow" class="show-div">
+    <div class="field">
+    <label for="n">Name:</label>
+    <input type="text" [(ngModel)] = "valueName" id="n" />
+  </div>
+    <div class="field">
+    <label for="n">Last Name:</label>
+    <input type="text" [(ngModel)] = "valueLastN" id="n" />
+  </div>
+    <div class="field">
+    <label for="n">Age:</label>
+    <input type="number" [(ngModel)] = "valueAge" id="n"/>
+  </div>
+    <div class="field">
+    <label for="n">Job:</label>
+    <input type="text" [(ngModel)] = "valueJob" id="n" />
+  </div>
+    <div class="field">
+    <label for="n">Company:</label>
+    <input type="text" [(ngModel)] = "valueCompany" id="n" />
+  </div>
+ 
+
+</div>
+</div>
+
+<div class="third-block">
+<div *ngFor = "let n of skills" >
+  <p>{{n}}</p>
+</div>
+<button (click) = "showDiv2()">Add new skill</button>
+</div>
+
+<div class="fourth-block">
+<div *ngIf = "showAdd" >
+<div><input type="text" [(ngModel)] = "newElement" class="show-add"></div> 
+<button (click) = "addElement()">Add</button> 
+</div>
+</div>
+
+<!-- <div><input type="number" [(ngModel)] = "newElement"></div>  -->
+<!-- <button (click) = "addElement()">Add</button>  -->
+
+
+
+
+<!-- <button [disabled] ="isDisabled" (click) = "onClick()">Disabled</button>
+
+ <input type="text" [(ngModel)] = "value">
+ <p>{{value}}</p> -->
+</div>

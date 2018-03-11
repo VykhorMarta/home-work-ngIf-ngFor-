@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+.main {
+    width: 100%;
+    margin: 60px;
+}
+
+button {
+    background: #0076ff;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.show-div {
+    width: 300px;
+    float: left;
+}
+.first-block {
+    width: 200px;
+    float: left;
+}
+
+.second-block {
+    float: left;
+    margin-left: 20px;
+}
+
+label {
+    float: left;
+}
+.field {
+    clear:both; 
+    text-align:right;
+    padding: 8px;
+}
+.third-block {
+    float: left;
+    margin-left: 60px;
+}
+
+.fourth-block {
+    float: left;
+    margin-left: 40px;
+    margin-top: 15px;
+
+}
+
+.show-add {
+    margin-bottom: 10px;
+}
